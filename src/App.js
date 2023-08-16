@@ -2,6 +2,7 @@ import logo from './plantsinwindow.gif';
 import './App.css';
 
 function App() {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   const callMotor1 = async () => {
     try {
       const response = await fetch('http://arturohouse.tplinkdns.com:8001/motor');
